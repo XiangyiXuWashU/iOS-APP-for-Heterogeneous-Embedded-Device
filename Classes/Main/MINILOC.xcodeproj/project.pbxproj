@@ -1,0 +1,1045 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63C53FA128573179907AD065 /* Pods_MINILOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305FC09782DACD94193A7924 /* Pods_MINILOCUITests.framework */; };
+		6FE97207B9894A2BF8EC1958 /* Pods_MINILOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786AFF1243007D9480417519 /* Pods_MINILOCTests.framework */; };
+		9E20AC091F682E9D0024DA68 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E20AC081F682E9D0024DA68 /* Accelerate.framework */; };
+		9E20AC0D1F68350A0024DA68 /* fft.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AC0C1F68350A0024DA68 /* fft.m */; };
+		9E20AC161F68940E0024DA68 /* FFTDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AC111F68940E0024DA68 /* FFTDemoBaseViewController.m */; };
+		9E20AC171F68940E0024DA68 /* FFTLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E20AC131F68940E0024DA68 /* FFTLineChartViewController.m */; };
+		9E20AC181F68940E0024DA68 /* FFTLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E20AC141F68940E0024DA68 /* FFTLineChartViewController.xib */; };
+		9EC6C3221F81FB07008CF8FC /* AudioParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6C3201F81FB02008CF8FC /* AudioParameters.m */; };
+		9EC6C3231F81FB0A008CF8FC /* SystemInfoBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6C31A1F81FB02008CF8FC /* SystemInfoBar.m */; };
+		9EC6C3241F81FB0E008CF8FC /* ToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6C31B1F81FB02008CF8FC /* ToneGenerator.m */; };
+		9EC6C3261F82005C008CF8FC /* AudioParameters.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6C31E1F81FB02008CF8FC /* AudioParameters.xib */; };
+		9EC6C3271F820064008CF8FC /* SystemInfoBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC6C31F1F81FB02008CF8FC /* SystemInfoBar.xib */; };
+		9ED4B2141F66E22D00366D05 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED4B2131F66E22D00366D05 /* AudioToolbox.framework */; };
+		AF2668D71F5DECE900E7B157 /* MINILOCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2668D61F5DECE900E7B157 /* MINILOCTabBarController.m */; };
+		AF2668DA1F5DF58B00E7B157 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2668D91F5DF58B00E7B157 /* MainView.xib */; };
+		AF2668E11F5DF72700E7B157 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2668E01F5DF72700E7B157 /* MainView.m */; };
+		AF2668E41F5E013B00E7B157 /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2668E31F5E013B00E7B157 /* SettingView.m */; };
+		AF2668E61F5E01D900E7B157 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2668E51F5E01D900E7B157 /* SettingView.xib */; };
+		AF460FF51F5C4BDA000C06FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF460FF41F5C4BDA000C06FB /* main.m */; };
+		AF460FF81F5C4BDA000C06FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF460FF71F5C4BDA000C06FB /* AppDelegate.m */; };
+		AF460FFB1F5C4BDB000C06FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF460FFA1F5C4BDB000C06FB /* ViewController.m */; };
+		AF460FFE1F5C4BDB000C06FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF460FFC1F5C4BDB000C06FB /* Main.storyboard */; };
+		AF4610001F5C4BDB000C06FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF460FFF1F5C4BDB000C06FB /* Images.xcassets */; };
+		AF4610031F5C4BDB000C06FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4610011F5C4BDB000C06FB /* LaunchScreen.storyboard */; };
+		AF46100E1F5C4BDC000C06FB /* MINILOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF46100D1F5C4BDC000C06FB /* MINILOCTests.m */; };
+		AF4610191F5C4BDC000C06FB /* MINILOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4610181F5C4BDC000C06FB /* MINILOCUITests.m */; };
+		AF46103D1F5C4EF6000C06FB /* screenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4610371F5C4EF5000C06FB /* screenShot.m */; };
+		AF46103E1F5C4EF6000C06FB /* UdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AF46103C1F5C4EF5000C06FB /* UdpSocket.m */; };
+		AF7A94511F5C5B8A004F6074 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7A94431F5C5735004F6074 /* Charts.framework */; };
+		AF7A94521F5C5B8A004F6074 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF7A94431F5C5735004F6074 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF7A945D1F5C6067004F6074 /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A94591F5C6067004F6074 /* DemoBaseViewController.m */; };
+		AF7A945E1F5C6067004F6074 /* LineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A945B1F5C6067004F6074 /* LineChartViewController.m */; };
+		AF7A945F1F5C6067004F6074 /* LineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF7A945C1F5C6067004F6074 /* LineChartViewController.xib */; };
+		AF7A94661F5C63AA004F6074 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A94651F5C63AA004F6074 /* Test.swift */; };
+		E95DBAE4DB10D1F817CC9CFF /* Pods_MINILOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AF44B9764D01F8467F4B4B /* Pods_MINILOC.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF46100A1F5C4BDC000C06FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF460FE81F5C4BDA000C06FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF460FEF1F5C4BDA000C06FB;
+			remoteInfo = MINILOC;
+		};
+		AF4610151F5C4BDC000C06FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF460FE81F5C4BDA000C06FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF460FEF1F5C4BDA000C06FB;
+			remoteInfo = MINILOC;
+		};
+		AF7A94421F5C5735004F6074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7A943D1F5C5733004F6074 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		AF7A94441F5C5735004F6074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7A943D1F5C5733004F6074 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		AF7A94531F5C5B8A004F6074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7A943D1F5C5733004F6074 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF7A94551F5C5B8A004F6074 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF7A94521F5C5B8A004F6074 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		056FE886DE49AEE1FF6714AD /* Pods-MINILOCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINILOCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MINILOCUITests/Pods-MINILOCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0FE057B35BEF79658EA7155F /* Pods-MINILOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINILOCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MINILOCUITests/Pods-MINILOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		305FC09782DACD94193A7924 /* Pods_MINILOCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINILOCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3400B60ACD1D02EDD7E57E4D /* Pods-MINILOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINILOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MINILOC/Pods-MINILOC.debug.xcconfig"; sourceTree = "<group>"; };
+		4E726B78BC36AFDDDBB82FDC /* Pods-MINILOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINILOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MINILOCTests/Pods-MINILOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73AF44B9764D01F8467F4B4B /* Pods_MINILOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINILOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		786AFF1243007D9480417519 /* Pods_MINILOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINILOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E20AC081F682E9D0024DA68 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9E20AC0B1F68350A0024DA68 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		9E20AC0C1F68350A0024DA68 /* fft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fft.m; sourceTree = "<group>"; };
+		9E20AC101F68940E0024DA68 /* FFTDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTDemoBaseViewController.h; path = ../FreqDomainCharts/FFTDemoBaseViewController.h; sourceTree = "<group>"; };
+		9E20AC111F68940E0024DA68 /* FFTDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFTDemoBaseViewController.m; path = ../FreqDomainCharts/FFTDemoBaseViewController.m; sourceTree = "<group>"; };
+		9E20AC121F68940E0024DA68 /* FFTLineChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTLineChartViewController.h; path = ../FreqDomainCharts/FFTLineChartViewController.h; sourceTree = "<group>"; };
+		9E20AC131F68940E0024DA68 /* FFTLineChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFTLineChartViewController.m; path = ../FreqDomainCharts/FFTLineChartViewController.m; sourceTree = "<group>"; };
+		9E20AC141F68940E0024DA68 /* FFTLineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FFTLineChartViewController.xib; path = ../FreqDomainCharts/FFTLineChartViewController.xib; sourceTree = "<group>"; };
+		9EC6C31A1F81FB02008CF8FC /* SystemInfoBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemInfoBar.m; sourceTree = "<group>"; };
+		9EC6C31B1F81FB02008CF8FC /* ToneGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToneGenerator.m; sourceTree = "<group>"; };
+		9EC6C31C1F81FB02008CF8FC /* AudioParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioParameters.h; sourceTree = "<group>"; };
+		9EC6C31D1F81FB02008CF8FC /* ToneGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToneGenerator.h; sourceTree = "<group>"; };
+		9EC6C31E1F81FB02008CF8FC /* AudioParameters.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioParameters.xib; sourceTree = "<group>"; };
+		9EC6C31F1F81FB02008CF8FC /* SystemInfoBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystemInfoBar.xib; sourceTree = "<group>"; };
+		9EC6C3201F81FB02008CF8FC /* AudioParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioParameters.m; sourceTree = "<group>"; };
+		9EC6C3251F81FE83008CF8FC /* SystemInfoBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemInfoBar.h; sourceTree = "<group>"; };
+		9ED4B2131F66E22D00366D05 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AF2668D51F5DECE900E7B157 /* MINILOCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MINILOCTabBarController.h; sourceTree = "<group>"; };
+		AF2668D61F5DECE900E7B157 /* MINILOCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MINILOCTabBarController.m; sourceTree = "<group>"; };
+		AF2668D91F5DF58B00E7B157 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainView.xib; path = ../MainView/MainView.xib; sourceTree = "<group>"; };
+		AF2668DF1F5DF72700E7B157 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainView.h; path = ../MainView/MainView.h; sourceTree = "<group>"; };
+		AF2668E01F5DF72700E7B157 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		AF2668E21F5E013B00E7B157 /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		AF2668E31F5E013B00E7B157 /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		AF2668E51F5E01D900E7B157 /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		AF460FF01F5C4BDA000C06FB /* MINILOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MINILOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF460FF41F5C4BDA000C06FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF460FF61F5C4BDA000C06FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF460FF71F5C4BDA000C06FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF460FF91F5C4BDA000C06FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF460FFA1F5C4BDB000C06FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF460FFD1F5C4BDB000C06FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF460FFF1F5C4BDB000C06FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF4610021F5C4BDB000C06FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF4610041F5C4BDB000C06FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4610091F5C4BDC000C06FB /* MINILOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MINILOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF46100D1F5C4BDC000C06FB /* MINILOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINILOCTests.m; sourceTree = "<group>"; };
+		AF46100F1F5C4BDC000C06FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4610141F5C4BDC000C06FB /* MINILOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MINILOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4610181F5C4BDC000C06FB /* MINILOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINILOCUITests.m; sourceTree = "<group>"; };
+		AF46101A1F5C4BDC000C06FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4610361F5C4EF5000C06FB /* screenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = screenShot.h; sourceTree = "<group>"; };
+		AF4610371F5C4EF5000C06FB /* screenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = screenShot.m; sourceTree = "<group>"; };
+		AF46103B1F5C4EF5000C06FB /* UdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocket.h; sourceTree = "<group>"; };
+		AF46103C1F5C4EF5000C06FB /* UdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpSocket.m; sourceTree = "<group>"; };
+		AF7A943D1F5C5733004F6074 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		AF7A94581F5C6067004F6074 /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBaseViewController.h; sourceTree = "<group>"; };
+		AF7A94591F5C6067004F6074 /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseViewController.m; sourceTree = "<group>"; };
+		AF7A945A1F5C6067004F6074 /* LineChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartViewController.h; sourceTree = "<group>"; };
+		AF7A945B1F5C6067004F6074 /* LineChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartViewController.m; sourceTree = "<group>"; };
+		AF7A945C1F5C6067004F6074 /* LineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartViewController.xib; sourceTree = "<group>"; };
+		AF7A94631F5C614E004F6074 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		AF7A94641F5C63A9004F6074 /* MINILOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MINILOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF7A94651F5C63AA004F6074 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = ../Test.swift; sourceTree = "<group>"; };
+		D85BD78E4929438859631EAF /* Pods-MINILOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINILOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MINILOC/Pods-MINILOC.release.xcconfig"; sourceTree = "<group>"; };
+		F0215D82EB90FE460A087C46 /* Pods-MINILOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINILOCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MINILOCTests/Pods-MINILOCTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF460FED1F5C4BDA000C06FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E20AC091F682E9D0024DA68 /* Accelerate.framework in Frameworks */,
+				9ED4B2141F66E22D00366D05 /* AudioToolbox.framework in Frameworks */,
+				E95DBAE4DB10D1F817CC9CFF /* Pods_MINILOC.framework in Frameworks */,
+				AF7A94511F5C5B8A004F6074 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4610061F5C4BDC000C06FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE97207B9894A2BF8EC1958 /* Pods_MINILOCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4610111F5C4BDC000C06FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C53FA128573179907AD065 /* Pods_MINILOCUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E20AC0E1F68939D0024DA68 /* FreqDomainCharts */ = {
+			isa = PBXGroup;
+			children = (
+				9E20AC121F68940E0024DA68 /* FFTLineChartViewController.h */,
+				9E20AC131F68940E0024DA68 /* FFTLineChartViewController.m */,
+				9E20AC101F68940E0024DA68 /* FFTDemoBaseViewController.h */,
+				9E20AC111F68940E0024DA68 /* FFTDemoBaseViewController.m */,
+				9E20AC141F68940E0024DA68 /* FFTLineChartViewController.xib */,
+			);
+			name = FreqDomainCharts;
+			sourceTree = "<group>";
+		};
+		9EC6C3191F81FAB5008CF8FC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9EC6C31C1F81FB02008CF8FC /* AudioParameters.h */,
+				9EC6C3201F81FB02008CF8FC /* AudioParameters.m */,
+				9EC6C31E1F81FB02008CF8FC /* AudioParameters.xib */,
+				9EC6C3251F81FE83008CF8FC /* SystemInfoBar.h */,
+				9EC6C31A1F81FB02008CF8FC /* SystemInfoBar.m */,
+				9EC6C31F1F81FB02008CF8FC /* SystemInfoBar.xib */,
+				9EC6C31D1F81FB02008CF8FC /* ToneGenerator.h */,
+				9EC6C31B1F81FB02008CF8FC /* ToneGenerator.m */,
+			);
+			name = Audio;
+			path = ../Audio;
+			sourceTree = "<group>";
+		};
+		AF2668D81F5DF4FD00E7B157 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				AF2668DF1F5DF72700E7B157 /* MainView.h */,
+				AF2668E01F5DF72700E7B157 /* MainView.m */,
+				AF2668D91F5DF58B00E7B157 /* MainView.xib */,
+			);
+			name = MainView;
+			path = ../MainView;
+			sourceTree = "<group>";
+		};
+		AF460FE71F5C4BDA000C06FB = {
+			isa = PBXGroup;
+			children = (
+				AF7A943D1F5C5733004F6074 /* Charts.xcodeproj */,
+				AF4610341F5C4EF5000C06FB /* TimeDomainCharts */,
+				9E20AC0E1F68939D0024DA68 /* FreqDomainCharts */,
+				AF2668D81F5DF4FD00E7B157 /* MainView */,
+				AF4610351F5C4EF5000C06FB /* Math */,
+				AF4610391F5C4EF5000C06FB /* Setting */,
+				AF46103A1F5C4EF5000C06FB /* WIFI */,
+				9EC6C3191F81FAB5008CF8FC /* Audio */,
+				AF4610381F5C4EF5000C06FB /* Others */,
+				AF460FF21F5C4BDA000C06FB /* Main */,
+				AF46100C1F5C4BDC000C06FB /* MINILOCTests */,
+				AF4610171F5C4BDC000C06FB /* MINILOCUITests */,
+				AF460FF11F5C4BDA000C06FB /* Products */,
+				CC3634ED3ABA26DA836F5177 /* Pods */,
+				B61FE540D313D5034A57BBC8 /* Frameworks */,
+				AF7A94641F5C63A9004F6074 /* MINILOC-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		AF460FF11F5C4BDA000C06FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF460FF01F5C4BDA000C06FB /* MINILOC.app */,
+				AF4610091F5C4BDC000C06FB /* MINILOCTests.xctest */,
+				AF4610141F5C4BDC000C06FB /* MINILOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF460FF21F5C4BDA000C06FB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AF7A94651F5C63AA004F6074 /* Test.swift */,
+				AF7A94631F5C614E004F6074 /* Singleton.h */,
+				AF460FF61F5C4BDA000C06FB /* AppDelegate.h */,
+				AF460FF71F5C4BDA000C06FB /* AppDelegate.m */,
+				AF460FF91F5C4BDA000C06FB /* ViewController.h */,
+				AF460FFA1F5C4BDB000C06FB /* ViewController.m */,
+				AF460FFC1F5C4BDB000C06FB /* Main.storyboard */,
+				AF460FFF1F5C4BDB000C06FB /* Images.xcassets */,
+				AF4610011F5C4BDB000C06FB /* LaunchScreen.storyboard */,
+				AF4610041F5C4BDB000C06FB /* Info.plist */,
+				AF460FF31F5C4BDA000C06FB /* Supporting Files */,
+			);
+			name = Main;
+			path = MINILOC;
+			sourceTree = "<group>";
+		};
+		AF460FF31F5C4BDA000C06FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF460FF41F5C4BDA000C06FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF46100C1F5C4BDC000C06FB /* MINILOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF46100D1F5C4BDC000C06FB /* MINILOCTests.m */,
+				AF46100F1F5C4BDC000C06FB /* Info.plist */,
+			);
+			path = MINILOCTests;
+			sourceTree = "<group>";
+		};
+		AF4610171F5C4BDC000C06FB /* MINILOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF4610181F5C4BDC000C06FB /* MINILOCUITests.m */,
+				AF46101A1F5C4BDC000C06FB /* Info.plist */,
+			);
+			path = MINILOCUITests;
+			sourceTree = "<group>";
+		};
+		AF4610341F5C4EF5000C06FB /* TimeDomainCharts */ = {
+			isa = PBXGroup;
+			children = (
+				AF7A945A1F5C6067004F6074 /* LineChartViewController.h */,
+				AF7A945B1F5C6067004F6074 /* LineChartViewController.m */,
+				AF7A94581F5C6067004F6074 /* DemoBaseViewController.h */,
+				AF7A945C1F5C6067004F6074 /* LineChartViewController.xib */,
+				AF7A94591F5C6067004F6074 /* DemoBaseViewController.m */,
+			);
+			name = TimeDomainCharts;
+			path = ../TimeDomainCharts;
+			sourceTree = "<group>";
+		};
+		AF4610351F5C4EF5000C06FB /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				AF4610361F5C4EF5000C06FB /* screenShot.h */,
+				AF4610371F5C4EF5000C06FB /* screenShot.m */,
+				9E20AC0B1F68350A0024DA68 /* fft.h */,
+				9E20AC0C1F68350A0024DA68 /* fft.m */,
+			);
+			name = Math;
+			path = ../Math;
+			sourceTree = "<group>";
+		};
+		AF4610381F5C4EF5000C06FB /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				AF2668D51F5DECE900E7B157 /* MINILOCTabBarController.h */,
+				AF2668D61F5DECE900E7B157 /* MINILOCTabBarController.m */,
+			);
+			name = Others;
+			path = ../Others;
+			sourceTree = "<group>";
+		};
+		AF4610391F5C4EF5000C06FB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				AF2668E21F5E013B00E7B157 /* SettingView.h */,
+				AF2668E31F5E013B00E7B157 /* SettingView.m */,
+				AF2668E51F5E01D900E7B157 /* SettingView.xib */,
+			);
+			name = Setting;
+			path = ../Setting;
+			sourceTree = "<group>";
+		};
+		AF46103A1F5C4EF5000C06FB /* WIFI */ = {
+			isa = PBXGroup;
+			children = (
+				AF46103B1F5C4EF5000C06FB /* UdpSocket.h */,
+				AF46103C1F5C4EF5000C06FB /* UdpSocket.m */,
+			);
+			name = WIFI;
+			path = ../WIFI;
+			sourceTree = "<group>";
+		};
+		AF7A943E1F5C5733004F6074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF7A94431F5C5735004F6074 /* Charts.framework */,
+				AF7A94451F5C5735004F6074 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B61FE540D313D5034A57BBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E20AC081F682E9D0024DA68 /* Accelerate.framework */,
+				9ED4B2131F66E22D00366D05 /* AudioToolbox.framework */,
+				73AF44B9764D01F8467F4B4B /* Pods_MINILOC.framework */,
+				786AFF1243007D9480417519 /* Pods_MINILOCTests.framework */,
+				305FC09782DACD94193A7924 /* Pods_MINILOCUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC3634ED3ABA26DA836F5177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3400B60ACD1D02EDD7E57E4D /* Pods-MINILOC.debug.xcconfig */,
+				D85BD78E4929438859631EAF /* Pods-MINILOC.release.xcconfig */,
+				4E726B78BC36AFDDDBB82FDC /* Pods-MINILOCTests.debug.xcconfig */,
+				F0215D82EB90FE460A087C46 /* Pods-MINILOCTests.release.xcconfig */,
+				0FE057B35BEF79658EA7155F /* Pods-MINILOCUITests.debug.xcconfig */,
+				056FE886DE49AEE1FF6714AD /* Pods-MINILOCUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF460FEF1F5C4BDA000C06FB /* MINILOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF46101D1F5C4BDC000C06FB /* Build configuration list for PBXNativeTarget "MINILOC" */;
+			buildPhases = (
+				AF0651FC362871084C20B992 /* [CP] Check Pods Manifest.lock */,
+				AF460FEC1F5C4BDA000C06FB /* Sources */,
+				AF460FED1F5C4BDA000C06FB /* Frameworks */,
+				AF460FEE1F5C4BDA000C06FB /* Resources */,
+				3C12D02CA046473CB7DFFC43 /* [CP] Embed Pods Frameworks */,
+				D35DECDAC05342DB3F5306B8 /* [CP] Copy Pods Resources */,
+				AF7A94551F5C5B8A004F6074 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7A94541F5C5B8A004F6074 /* PBXTargetDependency */,
+			);
+			name = MINILOC;
+			productName = MINILOC;
+			productReference = AF460FF01F5C4BDA000C06FB /* MINILOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF4610081F5C4BDC000C06FB /* MINILOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4610201F5C4BDC000C06FB /* Build configuration list for PBXNativeTarget "MINILOCTests" */;
+			buildPhases = (
+				72D3989BA230B971E9669BC3 /* [CP] Check Pods Manifest.lock */,
+				AF4610051F5C4BDC000C06FB /* Sources */,
+				AF4610061F5C4BDC000C06FB /* Frameworks */,
+				AF4610071F5C4BDC000C06FB /* Resources */,
+				9313127FAE7ED9CF66960504 /* [CP] Embed Pods Frameworks */,
+				10789CD888F0DA82956BD551 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF46100B1F5C4BDC000C06FB /* PBXTargetDependency */,
+			);
+			name = MINILOCTests;
+			productName = MINILOCTests;
+			productReference = AF4610091F5C4BDC000C06FB /* MINILOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF4610131F5C4BDC000C06FB /* MINILOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4610231F5C4BDC000C06FB /* Build configuration list for PBXNativeTarget "MINILOCUITests" */;
+			buildPhases = (
+				4A422E73CD751FA4342EFA7C /* [CP] Check Pods Manifest.lock */,
+				AF4610101F5C4BDC000C06FB /* Sources */,
+				AF4610111F5C4BDC000C06FB /* Frameworks */,
+				AF4610121F5C4BDC000C06FB /* Resources */,
+				0BDA01A53FC8E62A62679AD8 /* [CP] Embed Pods Frameworks */,
+				249ECE75CED30649E16FBD0E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF4610161F5C4BDC000C06FB /* PBXTargetDependency */,
+			);
+			name = MINILOCUITests;
+			productName = MINILOCUITests;
+			productReference = AF4610141F5C4BDC000C06FB /* MINILOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF460FE81F5C4BDA000C06FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Xiangyi Xu";
+				TargetAttributes = {
+					AF460FEF1F5C4BDA000C06FB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A4C775RX54;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					AF4610081F5C4BDC000C06FB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RMDX6ZQXYB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF460FEF1F5C4BDA000C06FB;
+					};
+					AF4610131F5C4BDC000C06FB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RMDX6ZQXYB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF460FEF1F5C4BDA000C06FB;
+					};
+				};
+			};
+			buildConfigurationList = AF460FEB1F5C4BDA000C06FB /* Build configuration list for PBXProject "MINILOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF460FE71F5C4BDA000C06FB;
+			productRefGroup = AF460FF11F5C4BDA000C06FB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AF7A943E1F5C5733004F6074 /* Products */;
+					ProjectRef = AF7A943D1F5C5733004F6074 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AF460FEF1F5C4BDA000C06FB /* MINILOC */,
+				AF4610081F5C4BDC000C06FB /* MINILOCTests */,
+				AF4610131F5C4BDC000C06FB /* MINILOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AF7A94431F5C5735004F6074 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = AF7A94421F5C5735004F6074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF7A94451F5C5735004F6074 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = AF7A94441F5C5735004F6074 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF460FEE1F5C4BDA000C06FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4610031F5C4BDB000C06FB /* LaunchScreen.storyboard in Resources */,
+				9EC6C3271F820064008CF8FC /* SystemInfoBar.xib in Resources */,
+				AF7A945F1F5C6067004F6074 /* LineChartViewController.xib in Resources */,
+				9EC6C3261F82005C008CF8FC /* AudioParameters.xib in Resources */,
+				AF4610001F5C4BDB000C06FB /* Images.xcassets in Resources */,
+				AF2668E61F5E01D900E7B157 /* SettingView.xib in Resources */,
+				AF460FFE1F5C4BDB000C06FB /* Main.storyboard in Resources */,
+				9E20AC181F68940E0024DA68 /* FFTLineChartViewController.xib in Resources */,
+				AF2668DA1F5DF58B00E7B157 /* MainView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4610071F5C4BDC000C06FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4610121F5C4BDC000C06FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BDA01A53FC8E62A62679AD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINILOCUITests/Pods-MINILOCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10789CD888F0DA82956BD551 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINILOCTests/Pods-MINILOCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		249ECE75CED30649E16FBD0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINILOCUITests/Pods-MINILOCUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C12D02CA046473CB7DFFC43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINILOC/Pods-MINILOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A422E73CD751FA4342EFA7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72D3989BA230B971E9669BC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9313127FAE7ED9CF66960504 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINILOCTests/Pods-MINILOCTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0651FC362871084C20B992 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D35DECDAC05342DB3F5306B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MINILOC/Pods-MINILOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF460FEC1F5C4BDA000C06FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC6C3241F81FB0E008CF8FC /* ToneGenerator.m in Sources */,
+				9EC6C3231F81FB0A008CF8FC /* SystemInfoBar.m in Sources */,
+				AF7A945D1F5C6067004F6074 /* DemoBaseViewController.m in Sources */,
+				AF2668D71F5DECE900E7B157 /* MINILOCTabBarController.m in Sources */,
+				9E20AC171F68940E0024DA68 /* FFTLineChartViewController.m in Sources */,
+				AF46103E1F5C4EF6000C06FB /* UdpSocket.m in Sources */,
+				AF460FFB1F5C4BDB000C06FB /* ViewController.m in Sources */,
+				9E20AC161F68940E0024DA68 /* FFTDemoBaseViewController.m in Sources */,
+				AF2668E41F5E013B00E7B157 /* SettingView.m in Sources */,
+				AF46103D1F5C4EF6000C06FB /* screenShot.m in Sources */,
+				AF460FF81F5C4BDA000C06FB /* AppDelegate.m in Sources */,
+				AF2668E11F5DF72700E7B157 /* MainView.m in Sources */,
+				9E20AC0D1F68350A0024DA68 /* fft.m in Sources */,
+				AF7A94661F5C63AA004F6074 /* Test.swift in Sources */,
+				9EC6C3221F81FB07008CF8FC /* AudioParameters.m in Sources */,
+				AF460FF51F5C4BDA000C06FB /* main.m in Sources */,
+				AF7A945E1F5C6067004F6074 /* LineChartViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4610051F5C4BDC000C06FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF46100E1F5C4BDC000C06FB /* MINILOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4610101F5C4BDC000C06FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4610191F5C4BDC000C06FB /* MINILOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF46100B1F5C4BDC000C06FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF460FEF1F5C4BDA000C06FB /* MINILOC */;
+			targetProxy = AF46100A1F5C4BDC000C06FB /* PBXContainerItemProxy */;
+		};
+		AF4610161F5C4BDC000C06FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF460FEF1F5C4BDA000C06FB /* MINILOC */;
+			targetProxy = AF4610151F5C4BDC000C06FB /* PBXContainerItemProxy */;
+		};
+		AF7A94541F5C5B8A004F6074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = AF7A94531F5C5B8A004F6074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF460FFC1F5C4BDB000C06FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF460FFD1F5C4BDB000C06FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF4610011F5C4BDB000C06FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4610021F5C4BDB000C06FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF46101B1F5C4BDC000C06FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF46101C1F5C4BDC000C06FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF46101E1F5C4BDC000C06FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3400B60ACD1D02EDD7E57E4D /* Pods-MINILOC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A4C775RX54;
+				INFOPLIST_FILE = MINILOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.wustl.miniloc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MINILOC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		AF46101F1F5C4BDC000C06FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85BD78E4929438859631EAF /* Pods-MINILOC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A4C775RX54;
+				INFOPLIST_FILE = MINILOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.wustl.miniloc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MINILOC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+		AF4610211F5C4BDC000C06FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E726B78BC36AFDDDBB82FDC /* Pods-MINILOCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RMDX6ZQXYB;
+				INFOPLIST_FILE = MINILOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WUSTL.MINILOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MINILOC.app/MINILOC";
+			};
+			name = Debug;
+		};
+		AF4610221F5C4BDC000C06FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0215D82EB90FE460A087C46 /* Pods-MINILOCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RMDX6ZQXYB;
+				INFOPLIST_FILE = MINILOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WUSTL.MINILOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MINILOC.app/MINILOC";
+			};
+			name = Release;
+		};
+		AF4610241F5C4BDC000C06FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE057B35BEF79658EA7155F /* Pods-MINILOCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RMDX6ZQXYB;
+				INFOPLIST_FILE = MINILOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WUSTL.MINILOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MINILOC;
+			};
+			name = Debug;
+		};
+		AF4610251F5C4BDC000C06FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056FE886DE49AEE1FF6714AD /* Pods-MINILOCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RMDX6ZQXYB;
+				INFOPLIST_FILE = MINILOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WUSTL.MINILOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MINILOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF460FEB1F5C4BDA000C06FB /* Build configuration list for PBXProject "MINILOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF46101B1F5C4BDC000C06FB /* Debug */,
+				AF46101C1F5C4BDC000C06FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF46101D1F5C4BDC000C06FB /* Build configuration list for PBXNativeTarget "MINILOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF46101E1F5C4BDC000C06FB /* Debug */,
+				AF46101F1F5C4BDC000C06FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4610201F5C4BDC000C06FB /* Build configuration list for PBXNativeTarget "MINILOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4610211F5C4BDC000C06FB /* Debug */,
+				AF4610221F5C4BDC000C06FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4610231F5C4BDC000C06FB /* Build configuration list for PBXNativeTarget "MINILOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4610241F5C4BDC000C06FB /* Debug */,
+				AF4610251F5C4BDC000C06FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF460FE81F5C4BDA000C06FB /* Project object */;
+}
